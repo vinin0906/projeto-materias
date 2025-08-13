@@ -1,75 +1,88 @@
+/* Resetando estilos padrão */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --preto: #e2c0c0;
-    --marinho: #493D9E;
-    --amarelo-claro:#FFF2AF;
-    --roxo-claro:#2600ff;
-    --verde: #43d9e4;
-    --azul-claro: #deec8b;
-    --branco: #a52a2a;
-    --marron-claro: #c29b6b;
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
-body{
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: var(--azul-claro);
-    color: var(--preto);
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
+/* Cabeçalho */
 header {
-    display: flex; 
-    width: 100%;
-    background-color: var(--marinho);
-    padding: 1rem;
-    justify-content: center;
+    background-color: #2a9d8f;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.portfolio h1{
-    font-size: 4rem;
-    color: var(--amarelo-claro);
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Seções de receitas */
 main {
-    margin: 40px auto;
     padding: 20px;
 }
 
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
+section {
+    margin-bottom: 40px;
 }
 
-.disciplina {
-    display: flex;
-    justify-content: center;
-    background-color: var(--branco);
-    border-radius: 10px;
-    padding: 30px;
-    width: 80%;
-    min-width: 280px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+section h2 {
+    font-size: 2rem;
+    color: #2a9d8f;
+    margin-bottom: 10px;
 }
 
-.disciplina:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0.2);
+section img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    border-radius: 8px;
 }
 
-.disciplina a {
-    color: var(--verde);
-    font-size: 5rem;
-    text-decoration: none;
+h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+ul li {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2a9d8f;
+    color: white;
+    margin-top: 40px;
 }
